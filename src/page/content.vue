@@ -1,7 +1,8 @@
 <template>
   <div>
-    <myHeader></myHeader>
+    <myHeader ></myHeader>
     <h2 v-text="dat.title"></h2>
+    <!-- v-show指令与v-if指令的区别就在于，前者一开始就加载，更适用于频繁的切换，后者需首先判断布尔值，为true才加载渲染 -->
     <p v-if="dat.author">作者：{{dat.author.loginname}}发表于：{{$utils.goodTime(dat.create_at)}}</p>
     <hr>
     <article v-html="dat.content"></article>

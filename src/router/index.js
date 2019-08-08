@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Index from '@/page/index'
 import Content from '@/page/content'
+import Zixun from '@/page/zixun'
 
 Vue.use(Router)
 
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path:'/zixun',
+      name:'Zixun',
+      component:Zixun
     },
     {
       // path:'/content',
