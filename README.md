@@ -1,6 +1,7 @@
 # headnav
 
 > 文件在src/views中，index为首页文件，manage为管理文件
+
 1.每一个单文件组件.vue通常都是由三部分构成template、style、script（为什么说通常，因为也可以只有模板template，不写任何样式和功能，但大多数组件都会有自己的样式和功能）。其中style有2个点，第一，可以引用外部样式，第二，作用域scoped。
 
 2.单文件组件的引用，需要先在script中用import引用（同时命名）格式为
